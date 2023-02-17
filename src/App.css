@@ -2,8 +2,20 @@
   display: flex;
 }
 
-.duck {
-  width: 200px;
-  height: 200px;
-  cursor: grab;
+.kirby {
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  animation: sheet 1s steps(6) infinite;
+  image-rendering: pixelated;
+  transform: scaleX(-1);
+}
+
+@keyframes sheet {
+  0% {
+    object-position: 0 0;
+  }
+  100% {
+    object-position: -1920px 0;
+  }
 }
